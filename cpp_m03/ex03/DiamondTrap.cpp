@@ -9,7 +9,7 @@ DiamondTrap::DiamondTrap() : ClapTrap("NoName_clap_name")
 	std::cout << CYAN "DiamondTrap" YELLOW "default constructor called" RESET << std::endl;
 }
 
-DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
+DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name")
 {
 	this->DiamondTrap::name.assign(name);
 	this->setHp(100);
@@ -37,7 +37,6 @@ DiamondTrap &				DiamondTrap::operator=( DiamondTrap const & src )
 {
 	if ( this != &src )
 	{
-		this->ClapTrap::setName(src.ClapTrap::getName());
 		this->setName(src.getName());
 		this->setHp(src.getHp());
 		this->setEp(src.getEp());
