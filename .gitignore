@@ -12,3 +12,9 @@
 **/accounts
 **/materia
 **/convert
+
+# some invisible dirs and files
+.DS_Store
+**/.DS_Store
+.vscode
+**/.vscode
