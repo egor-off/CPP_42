@@ -1,0 +1,14 @@
+# obj
+**/*.o
+
+# deps
+**/*.d
+
+# bin files
+*/*/ex*
+**/karenFilter
+**/megaphone
+**/PhoneBook
+**/accounts
+**/materia
+**/convert
